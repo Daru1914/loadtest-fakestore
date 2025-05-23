@@ -1,0 +1,10 @@
+Method,Name,Error,Occurrences
+GET,/nonexistent (404),RemoteDisconnected('Remote end closed connection without response'),1
+GET,//products,RemoteDisconnected('Remote end closed connection without response'),1
+GET,//products/2,RemoteDisconnected('Remote end closed connection without response'),1
+GET,//products/3,RemoteDisconnected('Remote end closed connection without response'),1
+GET,/products (timeout),"ReadTimeout(ReadTimeoutError(""HTTPSConnectionPool(host='fakestoreapi.com', port=443): Read timed out. (read timeout=0.001)""))",10508
+GET,/products (timeout),"ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x....>, 'Connection to fakestoreapi.com timed out. (connect timeout=0.001)')",1551
+GET,/nonexistent (404),HTTPError('404 Client Error: Not Found for url: /nonexistent (404)'),11925
+GET,//products/17,RemoteDisconnected('Remote end closed connection without response'),1
+GET,//products/6,RemoteDisconnected('Remote end closed connection without response'),1
