@@ -12,7 +12,17 @@ We tested the [Fake Store API](https://fakestoreapi.com), simulating user behavi
 - requests to invalid endpoints (to measure failures)
 
 ## Project Structure
-<pre> ```bash loadtest-fakestore/ ├── locust/ │ ├── locustfile.py │ ├── analyze_results.py │ ├── results/ │ └── requirements.txt ├── gatling/ │ ├── pom.xml │ └── src/test/java/simulations/StoreSimulation.java ``` </pre>
+```
+loadtest-fakestore/
+├── locust/
+│ ├── locustfile.py
+│ ├── analyze_results.py
+│ ├── results/
+│ └── requirements.txt
+├── gatling/
+│ ├── pom.xml
+│ └── src/test/java/simulations/StoreSimulation.java
+```
 
 
 ---
